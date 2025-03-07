@@ -1,0 +1,471 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FAF6EB;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F4E5;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c4515c;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #c4515c;
+}
+
+/* Section 1: Hero */
+.hero {
+    background-color: #ff868f;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    padding: 40px;
+}
+
+/* Center content inside but align text left */
+.hero-content {
+    max-width: 800px;
+}
+
+/* Main Title */
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.hero-description {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Split Layout Container */
+.split-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Left Section */
+.split-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Orange Header */
+.split-left-header {
+    background-color: #F9A875;
+    padding: 30px 50px;
+    color: white;
+}
+
+.split-left-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* White Content Area */
+.split-left-content {
+    background-color: white;
+    padding: 30px 50px;
+    color: #c4515c;
+    flex-grow: 1;
+    max-height: 500px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.split-left-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.split-left-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+/* Interface Heading */
+.interface-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c4515c;
+    margin-top: 30px;
+    
+}
+
+/* Diagram Section - Aligning Number and Image */
+.diagram-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Numbers (1), (2), (3) */
+.diagram-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c4515c;
+    margin-bottom: 10px;
+}
+
+/* Diagram Images */
+.diagram-img {
+    width: 80%; /* Adjust width as needed */
+    max-width: 500px; /* Prevents oversized images */
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds slight shadow */
+}
+
+
+/* Right Section (Observations & Interviews) */
+.split-right {
+    width: 50%;
+    background-color: #FAF6EB;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+/* Section Title */
+.split-right h2 {
+    font-size: 24px;
+    color: #c4515c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Keep Divider Visible */
+.split-right .section-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #D3835F;
+    margin-bottom: 0px;
+    flex-shrink: 0;
+}
+
+/* Content Scrolls Inside */
+.observations-content {
+    overflow-y: auto;
+    max-height: 600px;
+    padding-right: 10px;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.observations-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.observations-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* Interview Questions Section */
+.question-block {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Interview Questions */
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Interview Responses */
+.question-block p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Section 3: Personas & Empathy Maps */
+.personas-section {
+    background-color: #fff;
+    padding: 50px 50px;
+    border-bottom: 4px solid #D3835F;
+}
+
+/* Full-width Orange Header */
+.personas-header {
+    background-color: #F9A875;
+    padding: 30px 50px;
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+
+/* Main Header */
+.personas-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Content Container */
+.personas-content {
+    text-align: left;
+    padding: 30px 50px;
+}
+
+/* Subheading */
+.subheading {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+/* Empathy Maps Layout */
+.empathy-maps {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+
+
+/* Section 3: Personas */
+
+
+.personas-section {
+    background-color: #fff;
+    padding: 50px 0;
+    border-bottom: 4px solid #c4515c;
+}
+
+/* Full-width Orange Header */
+.personas-header {
+    background-color: #ffbec4;
+    padding: 30px 50px;
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+
+/* Personas Content */
+/* Personas Content - Make it Scrollable */
+.personas-content {
+    text-align: left;
+    padding: 10px 50px;
+    
+    max-height: 500px; /* Limits section height */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Hide Scrollbar but Allow Scrolling */
+.personas-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.personas-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+
+/* Subheading */
+
+.subheading {
+    font-size: 16px;
+    color: #c4515c;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: -400px;
+}
+
+/* Personas Container - Flexbox to Keep Them Side by Side */
+.personas-container {
+    display: flex;
+    justify-content: space-between; /* Space them apart */
+    align-items: flex-start;
+    gap: 80px;
+    
+}
+
+/* Persona Block - Side by Side */
+.persona-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%; /* Each persona takes half of the container */
+    gap: 20px;
+}
+
+/* Image & "Why [Name] Represents..." section */
+.persona-block > div:first-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-left: 40px;
+}
+
+/* Empathy Map Image */
+.empathy-img {
+    margin-left: 100px;
+    width: 170%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Keep "Why [Name] Represents..." Directly Below Image */
+.why-represents {
+    margin-top: 0px;
+    margin-left: 100px;
+    width: 170%;
+   
+}
+
+/* Right Side - Problems Section */
+.persona-text {
+    width: 30%;
+    text-align: left;
+    margin-left: 140px;
+   
+}
+
+/* Section Titles */
+.persona-text h3,
+.why-represents h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c4515c;
+    margin-bottom: 10px;
+}
+
+/* List Styling */
+.persona-text ul,
+.why-represents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.persona-text ul li,
+.why-represents ul li {
+    font-size: 16px;
+    color: #c4515c;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+
+/* Section 4: Storyboarding */
+.carousel-section {
+    padding: 60px 20px;
+    background-color: #FAF6EB;
+    border-top: 4px solid #D3835F;
+}
+
+/* Carousel Header */
+.carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Title */
+.carousel-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 80px;
+    color: #c4515c;
+}
+.subheading {
+    margin-left: 80px; /* Adjust to match your image alignment */
+}
+
+/* Carousel Wrapper */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+/* Horizontal Scrolling Carousel */
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 20px;
+}
+
+/* Carousel Images */
+.carousel-image {
+    width: 750px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    background: none;
+    border: 1px solid #333;
+    font-size: 16px;
+    padding: 5px 100px;
+    cursor: pointer;
+    color: #333;
+}
+
+.carousel-btn:hover {
+    background: #D3835F;
+    color: white;
+}
